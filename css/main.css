@@ -1,0 +1,329 @@
+.hh1.title {
+    color: red;
+}
+
+h1,
+h2 {
+    color: yellow;
+}
+
+.grand .son {
+    color: pink;
+}
+
+.grand>main {
+    color: purple;
+}
+
+.son+div {
+    color: aqua;
+}
+
+.son~div {
+    color: beige;
+}
+
+div[title=name] {
+    color: red;
+}
+
+div[title^=name] {
+    color: black;
+}
+
+div[title$=name] {
+    color: blue;
+}
+
+div[title*=name] {
+    color: green;
+}
+
+
+
+.fakeclass:hover {
+    color: red;
+}
+
+.fakeclass:active {
+    color: green;
+}
+
+.fakerinput:focus {
+    color: aqua;
+}
+
+li:first-child {
+    color: red;
+}
+
+li:nth-of-type(2) {
+    color: red;
+}
+
+li:nth-child(2) {
+    color: red;
+}
+
+input:checked {
+    height: 300px;
+}
+
+input:disabled {
+    width: 300px;
+}
+
+.fakeclass::first-letter {
+    font-size: 30px;
+}
+
+.fakeclass::selection {
+    color: aqua;
+}
+
+.fakeclass::before {
+    content: "before";
+}
+
+.fakeclass::after {
+    content: "after";
+}
+
+body {
+    font-size: 18px;
+    font-family: "STCaiyun", "Microsoft YaHei", sans-serif;
+    font-style: italic;
+    font-weight: 1000;
+    word-spacing: 10px;
+    text-decoration: underline dotted red;
+    /* text-indent: 2em; */
+    text-align: left;
+}
+
+.lineheight {
+    line-height: 592px;
+    height: 300px;
+    background-color: pink;
+}
+
+.va {
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: decimal;
+}
+
+table {
+    table-layout: auto;
+    border-spacing: 2px;
+    border-collapse: collapse;
+    caption-side: top;
+    cursor: wait;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    /* padding: 10px 10px 10px 10px; */
+    /* border: 2px solid pink; */
+    /* margin: 0px auto; */
+}
+
+.subbox {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    /* margin-top: 60px; */
+    /* margin-bottom: 10px; */
+}
+
+.subbox2 {
+    width: 50px;
+    height: 40px;
+    background-color: #fff;
+    margin-bottom: 1000px;
+}
+
+input {
+    vertical-align: bottom;
+}
+
+.subfloat {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    float: left;
+}
+
+.subfloat2 {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    float: left;
+}
+
+.floatbox {
+    background-color: pink;
+}
+
+.floatbox::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.post {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.abl {
+    width: 10px;
+    height: 10px;
+    background-color: pink;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}
+
+.fix {
+    width: 1000px;
+    height: 100px;
+    background-color: blue;
+    position: fixed;
+
+}
+
+.st {
+    width: 1000px;
+    height: 100px;
+    background-color: blue;
+    position: sticky;
+    top: 0px;
+}
+
+.vw {
+    background-color: green;
+    width: 300px;
+    height: 300px;
+    resize: both;
+    box-shadow: 1px 1px 1px pink;
+    border: 20px;
+    padding: 3px;
+    background-origin: content-box;
+    text-shadow: 1px 1px 3px pink;
+    white-space: pre-wrap;
+}
+
+.rad {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.white {
+
+    width: 300px;
+    height: 300px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background-image: linear-gradient(red, yellow, green);
+    transform: translate(10%) scale(0.8) rotate(20deg);
+    transform-origin: left top
+}
+
+.threed {
+    transform-style: preserve-3d;
+    perspective: 200px;
+    /* perspective-origin: 400px 300px; */
+}
+
+.sub3d {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    transform: rotate3d(1, 1, 1, 90deg)
+}
+
+.ts {
+    transition-property: all;
+    transition-duration: 1s;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+}
+
+.ts:hover {
+    width: 100px
+}
+
+@keyframes an {
+    0% {
+        width: 1000px
+    }
+
+    20% {
+        width: 100px
+    }
+
+    40% {
+        /*property1:value1*/
+        width: 1000px
+    }
+
+    60% {
+        /*property1:value1*/
+        width: 100px
+    }
+
+    80% {
+        /*property1:value1*/
+    }
+
+    100% {
+        /*property1:value1*/
+        width: 1000px
+    }
+}
+
+
+
+.ts {
+    /* 指定动画 */
+    animation-name: an;
+    /* 设置动画所需时间 */
+    animation-duration: 5s;
+    /* 设置动画延迟 */
+    animation-delay: 0.5s;
+}
+.col{
+    column-count:3
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:flex-end;
+    align-content:flex-end;
+    height: 1000px;
+    background-color: bisque;
+}
+.subflex{
+   width: 50px;
+   height: 100px;
+   flex-grow:0;
+   background-color: pink;
+}
