@@ -94,7 +94,7 @@ window.onload = function (e) {
         console.log(num);
         num++;
         if (num == 11) {
-            //关闭定时器  
+        
             clearInterval(timer);
         }
     }, 1000);
