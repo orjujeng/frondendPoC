@@ -8,8 +8,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 const p = {name : '12'}
 root.render(
     <div>
-    <Title/>
     <App/>
-    <ClassComponents {...p}/>
+    {/* <ClassComponents {...p}/> */}
     </div>
 );
