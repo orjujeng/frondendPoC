@@ -8,7 +8,7 @@ export default class ClassComponents extends React.Component {
     }
     input2=React.createRef();
     render() {
-        const { flag,adv } = this.state
+        const { flag,adv } = this.state/*  */
         return (<div>
                  <span onClick={this.changeFlag}>This is ClassComponents state test {flag ? 'true' : 'false'} {this.props.name} {this.state.name}</span>
                  <hr/>
