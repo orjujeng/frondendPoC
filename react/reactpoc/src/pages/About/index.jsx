@@ -19,7 +19,5 @@ export default class About extends React.Component {
             <Redirect to='/about/1' />
         </div>)
     }
-
-
 }
 
